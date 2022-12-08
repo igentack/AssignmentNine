@@ -6,8 +6,7 @@ for (let index = 0; index <= bishCount; index++) {
     } else if (index % 3 == 0) {
         console.log("Bish");
     } else if (index % 4 == 0) {
-        console.log("Bosh");
-        
+        console.log("Bosh");        
     } else {
         console.log(index);
     }  
