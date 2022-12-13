@@ -27,8 +27,8 @@
                 </button>
                 <div class="collapse navbar-collapse text-uppercase" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="#" class="nav-item nav-link active">Bish-Bosh</a>
-                        <a href="todo.html" class="nav-item nav-link">To Do List</a>
+                        <a href="index.html" class="nav-item nav-link">Bish-Bosh</a>
+                        <a href="#" class="nav-item nav-link active">To Do List</a>
                         
                    </div>
                  
@@ -38,11 +38,11 @@
     </div>
     <main>
         <div class="row p-5">
-            <div class="col-sm-3 bg-dark bg-opacity-75 rounded-2"> <div class="col p-lg-4 text-center">
-                <div id="bbprint"></div>
-            </div></div>
-            <div class="col-sm-6 p-lg-4 ">
-              <h3 class="pt-3 pb-3">Hej, här kan ni prova Bish-Bosh :D</h3>
+            <div class="col-sm-3 ">
+                
+            </div>
+            <div class="col-sm-6 p-lg-4">
+              <h3 class="pt-3 pb-3">Här kan du göra en ToDo lista :D</h3>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
                 molestias eius voluptas provident facilis repudiandae deleniti
@@ -54,52 +54,58 @@
                 molestias nisi exercitationem reprehenderit mollitia natus odit!
               </p>
     
-        <div  id="b"></div>
-        </div>
-            <div class="col-sm-3 bg-dark bg-opacity-75 pt-3 rounded-2 salut">
-                <form class="validate" id="bbform" novalidate>  
+     
+            </div>
+          
+            <div class="col-sm-3 bg-dark bg-opacity-75 pt-3 rounded-3">
+                <form class="validate" id="todoform" novalidate>  
                     <div class="form-floating mb-3">  
-                        <input type="number" min="1" class="form-control" id="bish" placeholder="..." required>  
-                        <label for="bish">Bish nr:</label>  
+                        <input type="text" minlength="1" class="form-control" id="todotext" placeholder="..." required>  
+                        <label for="todotext">Att göra:</label>  
                        <div class="valid-feedback">Tack! </div>   
-                        <div class="invalid-feedback"> Skriv in ett Bish nummer. </div> 
+                        <div class="invalid-feedback"> Skriv en sak att göra. </div> 
                     </div>  
-                    <div class="form-floating mt-2 mb-3">  
-                        <input type="number" min="1" class="form-control" id="bosh" placeholder="..." required>  
-                        <label for="bosh">Bosh nr:</label>  
-                        <div class="valid-feedback">Tack! </div>  
-                        <div class="invalid-feedback"> Skriv in ett Bosh nummer. </div>
-                    </div>  
-                    <div class="form-floating mt-2 mb-3">  
-                        <input type="number" min="1" class="form-control" id="bbcount" placeholder="..." required>  
-                        <label for="bbcount">Antal:</label> 
-                        <div class="valid-feedback">Tack! </div>  
-                        <div class="invalid-feedback"> Skriv in antal gånger. </div> 
-                    </div>  
-                        <button id="bboutput" type="submit" class="float-end btn btn-success mt-1"> Prova! </button>  
+                  
+                    <!-- <select class="form-select" aria-label="Default select example">
+                        <option value="1">Viktigt</option>
+                        <option value="2"selected>Normal</option>
+                        <option value="3">Kanske</option>
+                      
+                      </select> -->
+                        <button id="tdbutton" type="submit" class="float-end btn btn-success mt-3 mb-4"> Lägg till </button>  
                     </form> 
             </div>
         </div>
-            <div class="row p-5">
-                <div class="col-sm-5"></div>
-                    <div class="col p-lg-4 pt-1 text-center rounded-5">
-                        <div id="bbprint"></div>
-                    </div>
-                <div class="col-sm-5"></div>
-            </div>
-        <div class="row pt-6">    
     </div>
+    <div class="row p-5">
+        <div class="col-sm-4 bg-dark bg-opacity-50 rounded-2 "></div>
+            <div class="col doris p-lg-4 rounded-2 bg-dark bg-opacity-75 text-center">
+                <h3 class="text-white pb-2">- Att göra Listan -</h3>
+                <div id="tdprint">
+                    
+                </div>
+            </div>
+        <div class="col-sm-4 bg-dark p-lg-4 doris rounded-2 text-center" id="dropit">
+            <h3 class="text-white pb-2">- Göra nu Listan -</h3>
+        </div>
+    </div>
+    <div class="row pt-6"></div>
+    </div>
+        <div class="row p-5">
+ 
+        </div>
     </main>
-    <footer class="fixed-bottom footern">
+  
+    <footer class="footern fixed-bottom">
                 
         <div> 
             <h5 id="webmaster">
-                    &copy; 2022 &nbsp;| &nbsp;<a title="vilkenbraadress@gmail.com" href="mailto:vilkenbraadress@gmail.com">Ilia Nastase</a>
+                    &copy; 2022 &nbsp;| &nbsp;<a title="vilkenbraadress@gmail.com" href="mailto:vilkenbraadress@gmail.com">Rutger Hauer</a>
             </h5>
           
         </div>
         
     </footer>
-   <script src="js/bishbosh.js"></script>
+   <script src="js/todo.js"></script>
 </body>
 </html>

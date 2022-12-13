@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(9, 247, 128);;
+    animation-name: goingOn;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+@keyframes goingOn {
+    0%   {background-color: rgb(202, 236, 219);}
+    25%  {background-color: rgb(166, 240, 218);}
+    50%  {background-color: rgb(204, 218, 167);}
+    100% {background-color: rgb(202, 236, 219);}
+}
+#bbprint > p {
+  background-color: black;
+  color: aliceblue;
+  padding: 10px;
+  border: solid 1px white;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 1.6rem;
+}
+.ptag {
+  background-color: rgb(182, 125, 235);
+  color: aliceblue; 
+  padding: 10px;
+  padding-left: 2rem;
+  border: solid 1px rgb(112, 104, 104);
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 2rem;
+  margin-bottom: .2rem;;
+}
+
+#tdprint > p:hover {
+  background-color:aliceblue;
+  color:  rgb(182, 125, 235);
+  cursor: pointer;
+}
+
+.grayedout{
+  background-color: darkgrey;
+  color: whitesmoke;
+  text-decoration: line-through;
+}
+
+/* #tdprint > p > button {
+
+    background-color: white;
+    padding: 6px;
+    border: solid 1px white;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: .8rem;
+    
+} */
+
+button.btn-close {
+
+  background-color: white;
+  padding: 6px;
+  border: solid 1px white;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: .8rem;
+}
+
+.doris {
+  min-height: 500px;
+}
+
+.surabananer{
+    background-color: black;
+}
+
+.salut {
+    height: 370px;
+}
+.footern {
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(41, 48, 40);
+    letter-spacing: 1px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 35px;
+  }
+#webmaster {
+    font-weight: 100;
+    text-decoration: none;
+}
+  
+#webmaster > a {
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgb(41, 48, 40);
+}
+  
+#navbarCollapse > div > a:nth-child(1) {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+#navbarCollapse > div > a:nth-child(2) {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+#navbarCollapse > div > a:nth-child(1):hover {
+    color:  darkcyan;
+}
+
+#navbarCollapse > div > a:nth-child(2):hover {
+    color:  darkcyan;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#navbarCollapse > div > a.nav-item.nav-link.active {
+    text-decoration: underline;
+}
