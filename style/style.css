@@ -37,22 +37,30 @@ body {
   cursor: pointer;
 }
 
+
 .grayedout{
   background-color: darkgrey;
   color: whitesmoke;
   text-decoration: line-through;
 }
 
-/* #tdprint > p > button {
+#cardarea {
+  width: 226px;
+  height: 314px;
+ 
+}
 
-    background-color: white;
-    padding: 6px;
-    border: solid 1px white;
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: .8rem;
-    
-} */
+#cardarea > img {
+ padding-top: 16px;
+}
+
+.morf {
+  width: 30%;
+}
+
+#starwarsarea {
+  height: 30%; 
+}
 
 button.btn-close {
 

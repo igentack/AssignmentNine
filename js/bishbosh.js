@@ -39,7 +39,6 @@ bboutput.addEventListener('click', function(){
             bishBoshArray.push(index);
         }  
     }
-    console.log(bishBoshArray,"--------");
    
     bishBoshArray.forEach(element => {
       bbprint.innerHTML += `<p> ${element} </p>`;

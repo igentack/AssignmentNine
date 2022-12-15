@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-xxl">
                 <a href="#" class="navbar-brand float-start">
-                    <img src="/img/invertjs.png" height="80%" alt="javascriptLogo">
+                    <img src="/img/invertjs.png"  alt="javascriptLogo">
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -38,11 +38,11 @@
     </div>
     <main>
         <div class="row p-5">
-            <div class="col-sm-3 ">
+            <div id="cardarea" class="col-3 card bg-secondary rounded-3">
                 
             </div>
-            <div class="col-sm-6 p-lg-4">
-              <h3 class="pt-3 pb-3">Här kan du göra en ToDo lista :D</h3>
+            <div class="col-6 p-lg-4">
+              <h3 class="pt-3 pb-3">Här kan du göra en ToDo lista plus mer :D</h3>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
                 molestias eius voluptas provident facilis repudiandae deleniti
@@ -57,7 +57,7 @@
      
             </div>
           
-            <div class="col-sm-3 bg-dark bg-opacity-75 pt-3 rounded-3">
+            <div class="col-4 morf bg-dark bg-opacity-75 pt-3 rounded-3">
                 <form class="validate" id="todoform" novalidate>  
                     <div class="form-floating mb-3">  
                         <input type="text" minlength="1" class="form-control" id="todotext" placeholder="..." required>  
@@ -75,10 +75,22 @@
                         <button id="tdbutton" type="submit" class="float-end btn btn-success mt-3 mb-4"> Lägg till </button>  
                     </form> 
             </div>
+            </div>
+       
+        <div class="row p-5">
+            <div class="col-sm-4 bg-dark bg-opacity-50 rounded-2">
+                <textarea class="form-control mt-3" placeholder="Star Result:" id="starwarsarea"></textarea>
+                <div class="form-floating mb-3 mt-3">  
+                    <input type="text" minlength="1" class="form-control" id="starInput" placeholder="..." required>  
+                    <label for="starInput">Write character:</label>  
+                    <button id="starButton" type="submit" class="float-end btn btn-dark mt-3 mb-4"> Get Character </button>  
+                    <button id="cardButton" type="submit" class="float-start btn btn-success mt-3 mb-4"> Get A Card </button>  
+               <div class="valid-feedback">Tack! </div>   
+                <div class="invalid-feedback"> Skriv Star Wars. </div> 
+            </div>  
+          
+
         </div>
-    </div>
-    <div class="row p-5">
-        <div class="col-sm-4 bg-dark bg-opacity-50 rounded-2 "></div>
             <div class="col doris p-lg-4 rounded-2 bg-dark bg-opacity-75 text-center">
                 <h3 class="text-white pb-2">- Att göra Listan -</h3>
                 <div id="tdprint">
@@ -89,8 +101,8 @@
             <h3 class="text-white pb-2">- Göra nu Listan -</h3>
         </div>
     </div>
-    <div class="row pt-6"></div>
-    </div>
+        <div class="row pt-6"></div>
+  
         <div class="row p-5">
  
         </div>
@@ -106,6 +118,7 @@
         </div>
         
     </footer>
-   <script src="js/todo.js"></script>
+  
+   <script type="module" src="js/todo.js"></script>
 </body>
 </html>
